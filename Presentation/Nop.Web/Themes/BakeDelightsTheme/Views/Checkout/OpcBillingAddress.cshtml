@@ -4,7 +4,7 @@
     @await Component.InvokeAsync("Widget", new { widgetZone = PublicWidgetZones.OpCheckoutBillingAddressTop })
     @if (Model.ShipToSameAddressAllowed)
     {
-        <div class="section ship-to-same-address">
+        <div class="section ship-to-same-address" style="display:none">
             <p class="selector">
                 <input asp-for="ShipToSameAddress" />
                 <label asp-for="ShipToSameAddress">@T("Checkout.ShipToSameAddress")</label>
